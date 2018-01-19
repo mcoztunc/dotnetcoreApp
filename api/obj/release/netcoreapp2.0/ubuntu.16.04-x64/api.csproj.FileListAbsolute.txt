@@ -1,0 +1,13 @@
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/libhostpolicy.so
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/libhostfxr.so
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api.deps.json
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api.runtimeconfig.json
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api.runtimeconfig.dev.json
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api.dll
+/home/yagizgulen/Desktop/scotch/api/bin/release/netcoreapp2.0/ubuntu.16.04-x64/api.pdb
+/home/yagizgulen/Desktop/scotch/api/obj/release/netcoreapp2.0/ubuntu.16.04-x64/api.csproj.CoreCompileInputs.cache
+/home/yagizgulen/Desktop/scotch/api/obj/release/netcoreapp2.0/ubuntu.16.04-x64/api.AssemblyInfoInputs.cache
+/home/yagizgulen/Desktop/scotch/api/obj/release/netcoreapp2.0/ubuntu.16.04-x64/api.AssemblyInfo.cs
+/home/yagizgulen/Desktop/scotch/api/obj/release/netcoreapp2.0/ubuntu.16.04-x64/api.dll
+/home/yagizgulen/Desktop/scotch/api/obj/release/netcoreapp2.0/ubuntu.16.04-x64/api.pdb

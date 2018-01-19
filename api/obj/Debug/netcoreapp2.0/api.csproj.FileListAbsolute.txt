@@ -1,0 +1,10 @@
+/home/yagizgulen/Desktop/scotch/api/bin/Debug/netcoreapp2.0/api.deps.json
+/home/yagizgulen/Desktop/scotch/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.json
+/home/yagizgulen/Desktop/scotch/api/bin/Debug/netcoreapp2.0/api.runtimeconfig.dev.json
+/home/yagizgulen/Desktop/scotch/api/bin/Debug/netcoreapp2.0/api.dll
+/home/yagizgulen/Desktop/scotch/api/bin/Debug/netcoreapp2.0/api.pdb
+/home/yagizgulen/Desktop/scotch/api/obj/Debug/netcoreapp2.0/api.csproj.CoreCompileInputs.cache
+/home/yagizgulen/Desktop/scotch/api/obj/Debug/netcoreapp2.0/api.AssemblyInfoInputs.cache
+/home/yagizgulen/Desktop/scotch/api/obj/Debug/netcoreapp2.0/api.AssemblyInfo.cs
+/home/yagizgulen/Desktop/scotch/api/obj/Debug/netcoreapp2.0/api.dll
+/home/yagizgulen/Desktop/scotch/api/obj/Debug/netcoreapp2.0/api.pdb
