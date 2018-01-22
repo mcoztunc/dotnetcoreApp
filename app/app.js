@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     angular.bootstrap(document, ['ContactsApp']);
 });
 
+app.component('',{}); // her sekme için komponent oluştur routingten bağla olayı 
+app.component('',{}); 
+app.component('',{}); 
+
 app.controller('ContactsCtrl', function (ContactsService) {
     var ctrl = this;
     ctrl.Title = 'Contacts List';
