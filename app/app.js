@@ -6,9 +6,43 @@ document.addEventListener('DOMContentLoaded', function () {
     angular.bootstrap(document, ['ContactsApp']);
 });
 
-app.component('',{}); // her sekme için komponent oluştur routingten bağla olayı 
-app.component('',{}); 
-app.component('',{}); 
+/************   Logging                     ***/ 
+
+app.component('home',{
+    templateUrl:'static/home.html'
+    });
+
+/************   VIEW CHANNELS                     ***/ 
+
+
+app.component('newch',{
+templateUrl:'static/newch.html'
+}); // her sekme için komponent oluştur routingten bağla olayı 
+
+app.component('chprop',{
+    templateUrl:'static/chprop.html'
+    });
+
+app.component('delch',{
+    templateUrl:'static/delch.html'
+    });
+    
+app.component('startch',{
+    templateUrl:'static/startch.html'
+    });
+app.component('stopch',{
+    templateUrl:'static/stopch.html'
+    });
+app.component('runch',{
+    templateUrl:'static/runch.html'
+    });
+                    
+/************   Logging                     ***/ 
+
+app.component('logop',{
+    templateUrl:'static/logop.html'
+    });
+
 
 app.controller('ContactsCtrl', function (ContactsService) {
     var ctrl = this;

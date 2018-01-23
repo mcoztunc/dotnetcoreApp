@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Distman</title> 
@@ -43,6 +43,7 @@
   </ul> 
   </nav> 
 <br><br><br> 
+    <newch></newch>
     <div class="container" ng-controller="ContactsCtrl as ctrl">
         <h1>{{ctrl.Title}}</h1>
         <p style="color: red" ng-show="ctrl.ErrorMessage">{{ctrl.ErrorMessage}}</p>
