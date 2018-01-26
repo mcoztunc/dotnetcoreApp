@@ -1,0 +1,14 @@
+- Menuler ayarlandı.  +++++ 
+
+- angular routing ve componentler tamamlandı. ++++
+
+- menülerin içerikleri ve seçenekleri  ayarlanacak.
+
+- pencelerde klasörleri seçerken const {dialog} = require('electron')
+console.log(dialog.showOpenDialog({properties: ['openFile', 'openDirectory', 'multiSelections']}))  kullanılacak. 
+
+- index.html giriş sayfası düzenlenecek. 
+
+-Angular componentlerin controller: şeklinde fonksiyon tanımlayıp electronjs işlemleri yaptırılabilir.
+
+https://docs.angularjs.org/guide/component-router#component-based-applications

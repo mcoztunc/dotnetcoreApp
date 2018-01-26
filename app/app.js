@@ -6,10 +6,20 @@ document.addEventListener('DOMContentLoaded', function () {
     angular.bootstrap(document, ['ContactsApp']);
 });
 
-/************   Logging                     ***/ 
+app.value('$routerRootComponent','app')
+
+
+
+/************   Home                     ***/ 
 
 app.component('home',{
-    templateUrl:'static/home.html'
+    templateUrl:'static/home.html',
+    $routeConfig: [
+        {path:'',name:'',component:'',useAsDefault:true  },
+        {path:'',name:'',component:''                    }
+    ]
+
+
     });
 
 /************   VIEW CHANNELS                     ***/ 
@@ -17,7 +27,7 @@ app.component('home',{
 
 app.component('newch',{
 templateUrl:'static/newch.html'
-}); // her sekme için komponent oluştur routingten bağla olayı 
+}); 
 
 app.component('chprop',{
     templateUrl:'static/chprop.html'
