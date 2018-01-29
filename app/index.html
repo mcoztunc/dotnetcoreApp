@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Distman</title> 
-    <style type="text/css">nav {background:#FFF;float:left;} 
+
+    <style type="text/css">
+    nav {background:#FFF;float:left;} 
     nav ul {text-align:center;} 
     nav ul li {float:left;display:inline;} 
     nav ul li:hover {background:#E6E6E6;} 
@@ -11,39 +13,41 @@
     nav ul li ul {position:absolute;width:110px;background:#FFF;} 
     nav ul li ul li {width:110px;} 
     nav ul li ul li a {display:block;padding:15px 10px;color:#444;} 
-  nav ul li ul li:hover a {background:#F7F7F7;} 
-  nav ul li ul.fallback {display:none;} 
-  nav ul li:hover ul.fallback {display:block;} </style> 
+    nav ul li ul li:hover a {background:#F7F7F7;} 
+    nav ul li ul.fallback {display:none;} 
+    nav ul li:hover ul.fallback {display:block;} 
+    </style> 
+
 </head>
 <body>
-	<nav class="{{active}}" ng-click="$event.preventDefault()"> 
+	<nav> 
   <ul> 
-    <li><a href="#" class="home" ng-click="active='home'">Home</a></li> 
-    <li><a href="#" class="home" >File</a> 
+    <li><a >Home</a></li> 
+    <li><a >File</a> 
       <ul class="fallback"> 
-        <li><a href="#" class="home" ng-click="active='quit'">Quit</a></li> 
+        <li><a >Quit</a></li> 
       </ul> 
     </li> 
     <li> 
-      <a href="#">View</a> 
+      <a>View</a> 
       <ul class="fallback"> 
-        <li><a href="#" class="newch" ng-click="active='newch'">New Channel</a></li> 
-        <li><a href="#" class="chprop" ng-click="active='chprop'">Channel Properties</a></li> 
-        <li><a href="#" class="delch" ng-click="active='delch'"></a>Delete Channel</li> 
-        <li><a href="#" class="startch" ng-click="active='startch'"></a>Start Channel</li> 
-        <li><a href="#" class="stopch" ng-click="active='stopch'"></a>Stop Channel</li> 
-        <li><a href="#" class="runch" ng-click="active='runch'"></a>Run Channel Now</li> 
+        <li><a New Channel</a></li> 
+        <li><a >Channel Properties</a></li> 
+        <li><a ></a>Delete Channel</li> 
+        <li><a ></a>Start Channel</li> 
+        <li><a ></a>Stop Channel</li> 
+        <li><a ></a>Run Channel Now</li> 
       </ul> 
     </li> 
-    <li><a href="#">Logging</a> 
+    <li><a >Logging</a> 
     <ul class="fallback"> 
-      <li><a href="#" class="logop" ng-click="active='logop'">Log File Options</a></li> 
+      <li><a >Log File Options</a></li> 
     </ul> 
     </li> 
   </ul> 
   </nav> 
 <br><br><br> 
-    <newch></newch>
+    <app></app>
     <div class="container" ng-controller="ContactsCtrl as ctrl">
         <h1>{{ctrl.Title}}</h1>
         <p style="color: red" ng-show="ctrl.ErrorMessage">{{ctrl.ErrorMessage}}</p>
@@ -66,6 +70,7 @@
 <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="node_modules/angular-component-router-active/angular-component-router-active.js"></script>
 <script type="text/javascript" src="node_modules/angular1-component-router/angular_1_router.js"></script>
+<script type="text/javascript" src="node_modules/angular-route.js"></script>
 <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
-<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="app.js"></script>
 </html>

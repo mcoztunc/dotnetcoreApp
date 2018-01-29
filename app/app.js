@@ -1,16 +1,29 @@
 'use strict';
 
-var app = angular.module('ContactsApp', []);
+var app = angular.module('ContactsApp', ['ngRoute']);
 
 document.addEventListener('DOMContentLoaded', function () {
     angular.bootstrap(document, ['ContactsApp']);
 });
 
-app.value('$routerRootComponent','app')
+app.config(function($locationProvider){
+$locationProvider.html5Mode(true);
+
+});
+
+app.value('$routerRootComponent','app');
+
+app.component('app',{
 
 
 
-/************   Home                     ***/ 
+
+
+
+    
+})
+
+/************   Home                   
 
 app.component('home',{
     templateUrl:'static/home.html',
@@ -22,7 +35,7 @@ app.component('home',{
 
     });
 
-/************   VIEW CHANNELS                     ***/ 
+/************   VIEW CHANNELS                     *** 
 
 
 app.component('newch',{
