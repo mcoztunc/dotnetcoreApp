@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Distman</title> 
@@ -19,35 +19,36 @@
     </style> 
 
 </head>
-<body ng-app="app">
+<body>
 	<nav> 
   <ul> 
-    <li><a >Home</a></li> 
-    <li><a >File</a> 
+    <li><a ui-sref="home" ui-sref-active="active" >Home</a></li> 
+    <li><a>File</a> 
       <ul class="fallback"> 
-        <li><a >Quit</a></li> 
+        <li><a ui-sref="quit" ui-sref-active="active">Quit</a></li> 
       </ul> 
     </li> 
     <li> 
       <a>View</a> 
       <ul class="fallback"> 
-        <li><a New Channel</a></li> 
-        <li><a >Channel Properties</a></li> 
-        <li><a ></a>Delete Channel</li> 
-        <li><a ></a>Start Channel</li> 
-        <li><a ></a>Stop Channel</li> 
-        <li><a ></a>Run Channel Now</li> 
+        <li><a ui-sref="newch" ui-sref-active="active"> New Channel</a></li> 
+        <li><a ui-sref="chprop" ui-sref-active="active">Channel Properties</a></li> 
+        <li><a ui-sref="delch" ui-sref-active="active"></a>Delete Channel</li> 
+        <li><a ui-sref="startch" ui-sref-active="active"></a>Start Channel</li> 
+        <li><a ui-sref="stopch" ui-sref-active="active"></a>Stop Channel</li> 
+        <li><a ui-sref="runch" ui-sref-active="active"></a>Run Channel Now</li> 
       </ul> 
     </li> 
     <li><a >Logging</a> 
     <ul class="fallback"> 
-      <li><a >Log File Options</a></li> 
+      <li><a ui-sref="hello" ui-sref-active="active">Log File Options</a></li> 
     </ul> 
     </li> 
   </ul> 
   </nav> 
 <br><br><br> 
     <app></app>
+    <ui-view></ui-view>
     <div class="container" ng-controller="ContactsCtrl as ctrl">
         <h1>{{ctrl.Title}}</h1>
         <p style="color: red" ng-show="ctrl.ErrorMessage">{{ctrl.ErrorMessage}}</p>

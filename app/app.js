@@ -1,29 +1,75 @@
 'use strict';
 
-var app = angular.module('ContactsApp', ['ngRoute']);
+var app = angular.module('ContactsApp', []);
 
 document.addEventListener('DOMContentLoaded', function () {
     angular.bootstrap(document, ['ContactsApp']);
 });
+/*
+angular.module('ContactsApp').component('home',{
+template: require('./static/newch.html')
+});
 
-app.config(function($locationProvider){
-$locationProvider.html5Mode(true);
+angular.module('ContactsApp').component('newch',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('chprop',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('delch',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('startch',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('stopch',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('runch',{
+    template: require('./static/newch.html')
+    });
+angular.module('ContactsApp').component('logop',{
+    template: require('./static/newch.html')
+    });
+app.config(function($stateProvider){
+var states = [
+    {
+        name:'home', component: 'home', useAsDefault:true
+    },
+    {
+        name:'newch', component: 'newch'
+    },
+    {
+        name:'chprop', component: 'chprop'
+    },
+    {
+        name:'delch', component: 'delch'
+    },
+    {
+        name:'startch', component: 'startch'
+    },
+    {
+        name:'stopch', component: 'stopch'
+    },
+    {
+        name:'runch', component: 'runch'
+    },
+    {
+        name:'logop', component: 'logop'
+    }
+]
+
+
+
 
 });
 
-app.value('$routerRootComponent','app');
-
-app.component('app',{
 
 
+*/
 
 
-
-
-    
-})
-
-/************   Home                   
+/************   Home           z        
 
 app.component('home',{
     templateUrl:'static/home.html',
@@ -60,12 +106,12 @@ app.component('runch',{
     templateUrl:'static/runch.html'
     });
                     
-/************   Logging                     ***/ 
+/************   Logging                     
 
 app.component('logop',{
     templateUrl:'static/logop.html'
     });
-
+***/ 
 
 app.controller('ContactsCtrl', function (ContactsService) {
     var ctrl = this;
