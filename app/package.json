@@ -12,6 +12,7 @@
     "angular": "^1.6.1",
     "angular-component-router-active": "0.0.6",
     "angular-route": "^1.6.8",
+    "angular-ui-router": "^1.0.3",
     "angular1-component-router": "^1.0.0"
   },
   "scripts": {
