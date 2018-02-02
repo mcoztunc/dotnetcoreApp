@@ -22,33 +22,33 @@
 <body>
 	<nav> 
   <ul> 
-    <li><a ui-sref="home" ui-sref-active="active" >Home</a></li> 
+    <li><a ui-sref="home" >Home</a></li> 
     <li><a>File</a> 
-      <ul class="fallback"> 
-        <li><a ui-sref="quit" ui-sref-active="active">Quit</a></li> 
-      </ul> 
+         <ul class="fallback"> 
+             <li><a ui-sref="quit">Quit</a></li> 
+         </ul> 
     </li> 
     <li> 
       <a>View</a> 
       <ul class="fallback"> 
-        <li><a ui-sref="newch" ui-sref-active="active"> New Channel</a></li> 
-        <li><a ui-sref="chprop" ui-sref-active="active">Channel Properties</a></li> 
-        <li><a ui-sref="delch" ui-sref-active="active"></a>Delete Channel</li> 
-        <li><a ui-sref="startch" ui-sref-active="active"></a>Start Channel</li> 
-        <li><a ui-sref="stopch" ui-sref-active="active"></a>Stop Channel</li> 
-        <li><a ui-sref="runch" ui-sref-active="active"></a>Run Channel Now</li> 
+        <li><a href="#/newch" ui-sref="newch" > New Channel</a></li> 
+        <li><a ui-sref="chprop">Channel Properties</a></li> 
+        <li><a ui-sref="delch" ></a>Delete Channel</li> 
+        <li><a ui-sref="startch" ></a>Start Channel</li> 
+        <li><a ui-sref="stopch" ></a>Stop Channel</li> 
+        <li><a ui-sref="runch" ></a>Run Channel Now</li> 
       </ul> 
     </li> 
     <li><a >Logging</a> 
     <ul class="fallback"> 
-      <li><a ui-sref="logop" ui-sref-active="active">Log File Options</a></li> 
+      <li><a ui-sref="logop" >Log File Options</a></li> 
     </ul> 
     </li> 
   </ul> 
   </nav> 
 <br><br><br> 
     <app></app>
-    <ui-view></ui-view>
+    <div ui-view></div>
     <div class="container" ng-controller="ContactsCtrl as ctrl">
         <h1>{{ctrl.Title}}</h1>
         <p style="color: red" ng-show="ctrl.ErrorMessage">{{ctrl.ErrorMessage}}</p>
@@ -71,5 +71,6 @@
 <script type="text/javascript" src="node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 </html>
